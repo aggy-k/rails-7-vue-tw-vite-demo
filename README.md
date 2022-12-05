@@ -44,3 +44,26 @@ In `app/views/home.html.erb` call any vue component
   <home />
 </div>
 ```
+
+TailwindCSS v3 is set-up with postcss (not Rails 7's cssbundling)
+Tailwind components are imported in `app/frontend/entrypoints/main.scss` 
+CSS classes that uses Tailwind directives, such as @apply, will be imported as partials into `main.scss`
+
+Example: `app/frontend/stylesheets/_button.scss`
+```
+.btn {
+  @apply rounded-lg py-3 px-5 inline-block font-medium cursor-pointer transition-all duration-300 ease-in-out;
+
+  &.btn-primary {
+    @apply bg-blue-400 hover:bg-blue-600 text-white;
+  }
+
+  &.btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200;
+  }
+
+  &.btn-danger {
+    @apply bg-red-400 hover:bg-red-600 text-white;
+  }
+}
+```
