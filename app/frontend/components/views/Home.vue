@@ -4,7 +4,7 @@
     <h6>You can find me in: <span class="px-2 py-1 bg-slate-100">{{dir}}</span></h6>
 
     <div class="mt-8">
-      <button class="btn btn-primary">{{btnText}}</button>
+      <button @click="sayHello" class="btn btn-primary">{{btnText}}</button>
     </div>
   </div>
 </template>
@@ -23,7 +23,12 @@
       }
     },
     mounted() {
-      console.log('hello from HOME')
+      console.log('hello from VUE')
+    },
+    methods: {
+      sayHello() {
+        console.log('You clicked a Vue button 🎉')
+      }
     }
   }
 </script>
