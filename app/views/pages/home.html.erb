@@ -1,8 +1,15 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 <hr class="my-8">
-<!-- <div id="home"></div> -->
+
+<div data-controller="hello" class="my-8">
+  <h5>Container for Stimulus</h5>
+  <button class="btn btn-danger" data-action="click->hello#sayHello">
+    Hello Stimulus
+  </button>
+</div>
+
 <div data-behavior="vue">
   <!-- using the home vue component -->
-  <home btn-text="This is a prop! 🎉" />
+  <home btn-text="This is Vue a prop! 🎉" />
 </div>
