@@ -1,8 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<hr class="my-8">
-<!-- <div id="home"></div> -->
-<div data-behavior="vue">
-  <!-- using the home vue component -->
-  <home btn-text="This is a prop! 🎉" />
+<div class="w-full min-h-screen bg-cover bg-center flex flex-col items-center justify-center"
+  style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <h1 class="text-4xl text-white">SOME H1 TITLE HERE</h1>
+  <div class="my-4">
+    <primary-button text="Scroll down 👇"></primary-button>
+  </div>
+</div>
+
+<div id="home-body" class="w-1/2 mx-auto py-12">
+  <% 30.times do  %>
+    <p class="my-3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsa blanditiis aperiam a totam doloribus dolore. Quibusdam maxime, atque tempore est doloremque nam aut debitis odit autem magnam rerum itaque.
+    </p>
+  <% end %>
 </div>

@@ -4,7 +4,7 @@
     <h6>You can find me in: <span class="px-2 py-1 bg-slate-100">{{dir}}</span></h6>
 
     <div class="mt-8">
-      <button @click="sayHello" class="btn btn-primary">{{btnText}}</button>
+      <button @click="sayHello" class="btn btn-secondary">{{ btnText }}</button>
     </div>
   </div>
 </template>
@@ -13,17 +13,17 @@
   export default {
     name: 'Home',
     props: {
-      btnText: { type: String, value: 'Hello' },
+      btnText: String,
     },
     data() {
       return {
         // Component's initial data
-        // btnText: "hello",
         dir: "frontend/components/views/Home.vue"
       }
     },
     mounted() {
       console.log('hello from VUE')
+      console.log(111, this.btnText)
     },
     methods: {
       sayHello() {
