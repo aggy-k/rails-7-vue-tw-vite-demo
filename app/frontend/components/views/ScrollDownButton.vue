@@ -1,10 +1,12 @@
 <template>
-  <button @click="onClick" class="btn btn-primary">{{text}}</button>
+  <button @click="onClick" class="btn btn-primary">
+     Scroll down 👇
+  </button>
 </template>
 
 <script>
   export default {
-    name: 'PrimaryButton',
+    name: 'ScrollDownButton',
     props: {
       text: String
     },

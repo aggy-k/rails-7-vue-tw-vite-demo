@@ -13,14 +13,14 @@ import "./main.scss";
 import { createApp } from 'vue/dist/vue.esm-bundler';
 import Home from "@/components/views/Home.vue";
 import Navbar from "@/components/views/Navbar.vue";
-import PrimaryButton from "@/components/views/PrimaryButton.vue";
+import ScrollDownButton from "@/components/views/ScrollDownButton.vue";
 
 const app = createApp()
 
 // import (and use) the components one by one
 app.component('Home', Home);
 app.component('Navbar', Navbar);
-app.component('PrimaryButton', PrimaryButton);
+app.component('ScrollDownButton', ScrollDownButton);
 // // Make sure there's a <div id="vue"> on your application.html.erb
 // // We're mounting vue on a div that wraps our entire application frontend
 // // This means in any page, you can use any Vue component
@@ -36,8 +36,8 @@ app.mount('#vue')
 // nav.component('Navbar', Navbar);
 // nav.mount('#navbar')
 
-// // I.e. This is just mounting Vue id="home" div and using Home and PrimaryButton components
+// // I.e. This is just mounting Vue id="home" div and using Home and ScrollDownButton components
 // const home = createApp()
 // home.component('Home', Home);
-// home.component('PrimaryButton', PrimaryButton);
+// home.component('ScrollDownButton', ScrollDownButton);
 // home.mount('#home')
